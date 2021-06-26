@@ -13,7 +13,7 @@
 header {
   background-color: var(--secondary-color);
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 100px;
   z-index: 9999;
@@ -29,7 +29,7 @@ header h1 {
 header h1 a {
   color: var(--secondary-color);
   margin-left: 60px;
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -101,14 +101,14 @@ header nav ul li a {
 }
 
 .main article {
-  width: 820px;
+  min-width: 820px;
 }
 .main article p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .work h2 {
-  margin-right: 190px;
+  margin-left: 150px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   color: var(--secondary-color);
@@ -120,7 +120,7 @@ header nav ul li a {
 .work {
   display: flex;
   flex-wrap: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -235,4 +235,43 @@ footer ul li {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--secondary-color);
+}
+
+@media screen and (max-width: 947px) {
+  header h1 a {
+    font-size: 25px;
+  }
+
+  header nav ul {
+    margin-top: 0;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .main div {
+    border-right: 0px solid var(--secondary-color);
+    margin-left: 0px;
+  }
+  .main article {
+    min-width: 550px;
+  }
+  .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .work h2 {
+    min-height: 20px;
+    border-right: 0px solid var(--secondary-color);
+    margin-right: 0px;
+  }
+  .box1 {
+    min-width: 400px;
+  }
 }
