@@ -10,4 +10,4 @@ https://perlowski.github.io/portfolio-challenge/
 
 #### Screenshot
 
-[Screenshot](./assets/images/webpage-screenshot)
+[Screenshot](./assets/images/webpage-screenshot.jpg)
